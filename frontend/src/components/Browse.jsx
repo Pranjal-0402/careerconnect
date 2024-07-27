@@ -25,7 +25,7 @@ const Browse = () => {
           <div className='grid grid-cols-3 gap-4'>
 
             {
-              allJobs?.length !== 0 ? allJobs?.map((job) => {
+              allJobs?.length === 0 ? <span>No Job Found</span> : allJobs?.map((job) => {
                 return (
                   <motion.div
                     key={job._id}
@@ -37,7 +37,7 @@ const Browse = () => {
                     <Job job={job} />
                   </motion.div>
                 )
-              }) : <span>No Job Found</span>
+              }) 
             }
           </div>
         </div>
