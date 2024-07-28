@@ -57,7 +57,7 @@ const Login = () => {
         <>
             <Navbar />
             <div className='flex items-center justify-center max-w-7xl mx-auto'>
-                <form onSubmit={submitHandler} className='w-1/2 border border-gray-200 rounded-md p-4 my-10'>
+                <form onSubmit={submitHandler} className='w-1/2 border border-gray-200 rounded-md p-4 my-10 bg-slate-100 shadow-2xl'>
                     <h1 className='font-bold text-xl mb-4'>Login</h1>
                     <div className='my-2'>
                         <Label>Email</Label>
@@ -66,7 +66,7 @@ const Login = () => {
                             name="email"
                             value={input.email}
                             onChange={changeEventHandler}
-                            placeholder="patel@gmail.com"
+                            placeholder="Enter your Email Id"
                         />
                     </div>
                     <div className='my-2'>
@@ -76,8 +76,7 @@ const Login = () => {
                             name="password"
                             value={input.password}
                             onChange={changeEventHandler}
-                            placeholder="password"
-                        />
+                            placeholder="Enter your Password"
                     </div>
                     <RadioGroup defaultValue="comfortable" className="flex items-center gap-4 my-5">
                         <div className="flex items-center space-x-2">
@@ -88,7 +87,7 @@ const Login = () => {
                                 checked={input.role === 'student'}
                                 onChange={changeEventHandler}
                             />
-                            <Label htmlFor="r1">Students</Label>
+                            <Label htmlFor="r1">Student</Label>
                         </div>
                         <div className="flex items-center space-x-2">
                             <input
