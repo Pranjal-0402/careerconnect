@@ -72,7 +72,7 @@ const Singup = () => {
     <>
       <Navbar />
       <div className='flex items-center justify-center max-w-7xl mx-auto'>
-        <form onSubmit={submitHandler} className='w-1/2 border border-gray-200 rounded-md p-4 my-10'>
+        <form onSubmit={submitHandler} className='w-1/2 border border-gray-200 rounded-md p-4 my-10 bg-slate-100 shadow-2xl'>
           <h1 className='font-bold text-xl mb-4'>Sign Up</h1>
           <div className='my-2'>
             <Label>Full Name</Label>
@@ -81,7 +81,7 @@ const Singup = () => {
               value={input.fullname}
               name="fullname"
               onChange={changeEventHandler}
-              placeholder="patel"
+              placeholder="Enter your FullName"
             />
           </div>
           <div className='my-2'>
@@ -91,7 +91,7 @@ const Singup = () => {
               value={input.email}
               name="email"
               onChange={changeEventHandler}
-              placeholder="patel@gmail.com"
+              placeholder="Enter your Email Id"
             />
           </div>
           <div className='my-2'>
@@ -101,7 +101,7 @@ const Singup = () => {
               value={input.phoneNumber}
               name="phoneNumber"
               onChange={changeEventHandler}
-              placeholder="+918080808080"
+              placeholder="Enter your 10 digit Phone Number"
             />
           </div>
           <div className='my-2'>
@@ -111,7 +111,7 @@ const Singup = () => {
               value={input.password}
               name="password"
               onChange={changeEventHandler}
-              placeholder="password"
+              placeholder="Enter your Password"
             />
           </div>
           <div className='flex items-center justify-between'>
@@ -125,7 +125,7 @@ const Singup = () => {
                   onChange={changeEventHandler}
                   className="cursor-pointer"
                 />
-                <Label htmlFor="r1">Students</Label>
+                <Label htmlFor="r1">Student</Label>
               </div>
               <div className="flex items-center space-x-2">
                 <Input
