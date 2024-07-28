@@ -32,9 +32,7 @@ const Jobs = () => {
         if (authUser?.role === 'recruiter') {
             navigate("/admin/jobs");
         }
-        else if(!authUser?.role){
-            naviagte("/signup");
-        }
+      
     })
     return (
         <div className='bg-gray-100 h-screen'>
