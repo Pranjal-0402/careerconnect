@@ -77,6 +77,7 @@ const Login = () => {
                             value={input.password}
                             onChange={changeEventHandler}
                             placeholder="Enter your Password"
+                            />
                     </div>
                     <RadioGroup defaultValue="comfortable" className="flex items-center gap-4 my-5">
                         <div className="flex items-center space-x-2">
